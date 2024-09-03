@@ -213,7 +213,7 @@
       class="hidden"
       on:change={onUploadImage} />
     <label
-      class="whitespace-no-wrap bg-blue-500 hover:bg-blue-700 text-white
+      class="whitespace-no-wrap bg-black hover:bg-gray-800 text-white
       font-bold py-1 px-3 md:px-4 rounded mr-3 cursor-pointer md:mr-4"
       for="pdf">
       Choose PDF
@@ -257,12 +257,11 @@
     </div>
     <button
       on:click={savePDF}
-      class="w-20 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3
+      class="w-20 bg-black hover:bg-gray-800 text-white font-bold py-1 px-3
       md:px-4 mr-3 md:mr-4 rounded"
       class:cursor-not-allowed={pages.length === 0 || saving || !pdfFile}
-      class:bg-blue-700={pages.length === 0 || saving || !pdfFile}>
+      class:bg-black-800={pages.length === 0 || saving || !pdfFile}>
       {saving ? 'Saving' : 'Save'}
-    </button>
     <a href="https://ethicalai.network">
       <img
         src="/logo.png"
@@ -303,9 +302,9 @@
           class="p-5 w-full flex flex-col items-center overflow-hidden"
           on:mousedown={() => selectPage(pIndex)}
           on:touchstart={() => selectPage(pIndex)}>
-          <div
-            class="relative shadow-lg"
-            class:shadow-outline={pIndex === selectedPageIndex}>
+              <div
+                class="relative shadow-lg"
+                style={`box-shadow: ${pIndex === selectedPageIndex ? '0 0 0 3px rgb(182 182 182 / 50%)' : 'none'}`}>
             <PDFPage
               on:measure={e => onMeasure(e.detail.scale, pIndex)}
               {page} />

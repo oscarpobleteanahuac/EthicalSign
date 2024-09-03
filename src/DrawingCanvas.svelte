@@ -69,13 +69,13 @@
   <div class="absolute right-0 bottom-0 mr-4 mb-4 flex">
     <button
       on:click={cancel}
-      class=" w-24 bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4
+      class=" w-24 bg-gray-600 hover:bg-gray-700 text-white font-bold py-1 px-4
       rounded mr-4">
       Cancel
     </button>
     <button
       on:click={finish}
-      class="w-24 bg-blue-600 hover:bg-blue-700 text-white font-bold py-1 px-4
+      class="w-24 bg-black hover:bg-gray-800 text-white font-bold py-1 px-4
       rounded">
       Done
     </button>
