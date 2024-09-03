@@ -262,6 +262,12 @@
       class:cursor-not-allowed={pages.length === 0 || saving || !pdfFile}
       class:bg-black-800={pages.length === 0 || saving || !pdfFile}>
       {saving ? 'Saving' : 'Save'}
+    </button>
+    <button
+      class="w-20 bg-black hover:bg-gray-800 text-white font-bold py-1 px-3
+      md:px-4 mr-3 md:mr-4 rounded">
+    Share
+    </button>
     <a href="https://ethicalai.network">
       <img
         src="/logo.png"
