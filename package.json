@@ -1,8 +1,8 @@
 {
-  "name": "pdf-editor",
+  "name": "EthicalSign",
   "version": "1.0.0",
-  "author": "ShizukuIchi <shizukuichi@gmail.com>",
-  "homepage": "https://pdf-editor.now.sh",
+  "author": "EthicalAI <william@ethicalai.network>",
+  "homepage": "https://sign.ethical.tools",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
